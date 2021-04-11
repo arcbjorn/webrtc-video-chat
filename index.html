@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webrtc Video Chat</title>
+  </head>
+  <body>
+    <h2>Arc Video Chat</h2>
+    <div class="videos">
+      <span>
+        <h1>Local</h1>
+        <video id="webcamVid" autoplay playsinline></video>
+      </span>
+      <span>
+        <h1>Remote</h1>
+        <video id="remoteVid" autoplay playsinline></video>
+      </span>
+    </div>
+
+    <button id="webcamBtn">Enable webcam</button>
+    <h2>Make a new Call</h2>
+    <button id="callBtn" disabled>Call</button>
+
+    <h2>Join a Call</h2>
+
+    <input id="callInput" />
+    <button id="answerBtn" disabled>Answer</button>
+
+    <button id="disconnectBtn" disabled>Disconnect</button>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
